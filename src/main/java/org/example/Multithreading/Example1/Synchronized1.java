@@ -1,7 +1,7 @@
 package org.example.Multithreading.Example1;
 
 public class Synchronized1 {
-    static Object lock = new Object();
+    final static Object lock = new Object();
     static int customer = 0;
    void queue(){
        synchronized (lock) {
